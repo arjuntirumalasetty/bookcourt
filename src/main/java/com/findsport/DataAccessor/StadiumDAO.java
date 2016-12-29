@@ -12,11 +12,13 @@ import com.findsport.Main.StartService;
  */
 public class StadiumDAO {
 
+	private static final String propertiesFile = "src/main/resources/query.properties";
+
 	public static boolean insertData(Stadium stadiumDataObject) {
 
 		try {
 			Properties prop = new Properties();
-			InputStream input = new FileInputStream("C:\\Project\\findsport\\findsport\\src\\main\\resources\\query.properties");
+			InputStream input = new FileInputStream(propertiesFile);
 			prop.load(input);
 			String insert_stadium_details = prop.getProperty("insert_stadium_details");
 			JdbcTemplate template = StartService.getJdbcTemplate();
