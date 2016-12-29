@@ -4,15 +4,14 @@ import com.findsport.DataAccessor.StadiumDAO;
 import com.findsport.DataObjects.Stadium;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by Arjun on 12/28/2016.
  */
 @RestController
+@Controller
 public class AdminRegisterController {
 
     @RequestMapping(value= "/stadium/", method = RequestMethod.GET)
@@ -24,5 +23,10 @@ public class AdminRegisterController {
         else{
             return new ResponseEntity<Void>(HttpStatus.CONFLICT);
         }
+    }
+    @RequestMapping(value="/firstTest",method = RequestMethod.POST)
+    public @ResponseBody Stadium testMethod(@PathVariable Stadium Value){
+        System.out.print(Value.getStadiumID());
+        return Value;
     }
 }

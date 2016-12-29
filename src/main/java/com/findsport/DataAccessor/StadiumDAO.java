@@ -19,6 +19,7 @@ public class StadiumDAO {
 		try {
 			Properties prop = new Properties();
 			InputStream input = new FileInputStream(propertiesFile);
+
 			prop.load(input);
 			String insert_stadium_details = prop.getProperty("insert_stadium_details");
 			JdbcTemplate template = StartService.getJdbcTemplate();

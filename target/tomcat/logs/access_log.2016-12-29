@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 0:0:0:0:0:0:0:1 - - [29/Dec/2016:18:20:40 +0530] "GET /bookcourt/teststadium HTTP/1.1" 200 82 http-bio-8080-exec-1 5116
+=======
+0:0:0:0:0:0:0:1 - - [29/Dec/2016:12:13:26 +0530] "GET /bookcourt/test HTTP/1.1" 200 13 http-bio-8080-exec-1 2111
+0:0:0:0:0:0:0:1 - - [29/Dec/2016:12:59:54 +0530] "GET /bookcourt/ HTTP/1.1" 404 1031 http-bio-8080-exec-1 1782
+0:0:0:0:0:0:0:1 - - [29/Dec/2016:13:14:09 +0530] "GET /bookcourt/ HTTP/1.1" 500 4159 http-bio-8080-exec-3 224
+0:0:0:0:0:0:0:1 - - [29/Dec/2016:13:35:53 +0530] "GET /bookcourt/firstTest HTTP/1.1" 200 5 http-bio-8080-exec-1 1242
+>>>>>>> Added Admin controller and added the dependecies for test
