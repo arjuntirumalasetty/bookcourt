@@ -28,3 +28,13 @@ CREATE TABLE findsport.court_availability (
     booked_from TIME,
     booked_till TIME
 );
+
+CREATE TABLE findsport.stadium_address (
+    address_id INT NOT NULL AUTO_INCREMENT,
+    street_name varchar(225),
+    city_name varchar(50),
+    land_mark varchar(50),
+    state VARCHAR(50),
+    country VARCHAR(50),
+    PRIMARY KEY (address_id)
+);

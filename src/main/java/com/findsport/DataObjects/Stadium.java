@@ -9,7 +9,6 @@ public class Stadium {
     private float stadiumLongitude;
     private float stadiumLatitude;
     private String stadiumPhoneNo;
-    private String stadiumAddress;
     private String stadiumName;
 
     public void setStadiumID(int stadiumID) {
@@ -32,9 +31,6 @@ public class Stadium {
         this.stadiumPhoneNo = stadiumPhoneNo;
     }
 
-    public void setStadiumAddress(String stadiumAddress) {
-        this.stadiumAddress = stadiumAddress;
-    }
 
     public int getStadiumID() {
         return stadiumID;
@@ -56,7 +52,4 @@ public class Stadium {
         return stadiumPhoneNo;
     }
 
-    public String getStadiumAddress() {
-        return stadiumAddress;
-    }
 }
