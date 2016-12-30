@@ -36,6 +36,11 @@
             <artifactId>spring-hateoas</artifactId>
             <version>0.22.0.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
         <!-- Junit Dependency -->
         <!-- https://mvnrepository.com/artifact/junit/junit-dep -->
         <dependency>

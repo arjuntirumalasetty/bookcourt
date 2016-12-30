@@ -14,11 +14,12 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class AdminRegisterController {
 
-    @RequestMapping(value= "/stadium/", method = RequestMethod.GET)
-    public ResponseEntity<Void> createAdmin(@RequestBody Stadium stadium ){
-        boolean reslut = StadiumDAO.insertData(stadium);
+    @RequestMapping(value= "/stadium", method = RequestMethod.POST)
+    public ResponseEntity<Void> createAdmin(){
+        System.out.println("Inside /Stadium");
+        boolean reslut = true;//StadiumDAO.insertData(stadium);
         if(reslut){
-            return new ResponseEntity<Void>(HttpStatus.CREATED);
+            return new ResponseEntity<Void>(HttpStatus.OK);
         }
         else{
             return new ResponseEntity<Void>(HttpStatus.CONFLICT);
