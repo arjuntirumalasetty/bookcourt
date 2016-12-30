@@ -6,8 +6,8 @@ package com.findsport.DataObjects;
 public class Stadium {
 
     private int stadiumID;
-    private String stadiumLongitude;
-    private String stadiumLatitude;
+    private float stadiumLongitude;
+    private float stadiumLatitude;
     private String stadiumPhoneNo;
     private String stadiumAddress;
     private String stadiumName;
@@ -20,11 +20,11 @@ public class Stadium {
         this.stadiumName = stadiumName;
     }
 
-    public void setStadiumLongitude(String stadiumLongitude) {
+    public void setStadiumLongitude(float stadiumLongitude) {
         this.stadiumLongitude = stadiumLongitude;
     }
 
-    public void setStadiumLatitude(String stadiumLatitude) {
+    public void setStadiumLatitude(float stadiumLatitude) {
         this.stadiumLatitude = stadiumLatitude;
     }
 
@@ -44,11 +44,11 @@ public class Stadium {
         return stadiumName;
     }
 
-    public String getStadiumLongitude() {
+    public float getStadiumLongitude() {
         return stadiumLongitude;
     }
 
-    public String getStadiumLatitude() {
+    public float getStadiumLatitude() {
         return stadiumLatitude;
     }
 

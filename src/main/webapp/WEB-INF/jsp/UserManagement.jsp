@@ -28,7 +28,7 @@
                           <div class="form-group col-md-12">
                               <label class="col-md-2 control-lable" for="uname">Name</label>
                               <div class="col-md-7">
-                                  <input type="text" ng-model="ctrl.stadium.name" id="uname" class="username form-control input-sm" placeholder="Enter your stadium name" required ng-minlength="3" />
+                                  <input type="text" ng-model="ctrl.stadium.stadiumName" id="uname" class="username form-control input-sm" placeholder="Enter your stadium name" required ng-minlength="3" />
                                   <div class="has-error" ng-show="myForm.$dirty">
                                       <span ng-show="myForm.uname.$error.required">This is a required field</span>
                                       <span ng-show="myForm.uname.$error.minlength">Minimum length required is 3</span>
@@ -42,7 +42,7 @@
                             <div class="form-group col-md-12">
                                 <label class="col-md-2 control-lable" for="phno">Phone number</label>
                                 <div class="col-md-7">
-                                    <input type="text" ng-model="ctrl.stadium.phno" id="phno" class="username form-control input-sm" placeholder="Enter stadium phone number" required ng-minlength="10"/>
+                                    <input type="text" ng-model="ctrl.stadium.stadiumPhoneNo" id="phno" class="username form-control input-sm" placeholder="Enter stadium phone number" required ng-minlength="10"/>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@
                           <div class="form-group col-md-12">
                               <label class="col-md-2 control-lable" for="address">Address</label>
                               <div class="col-md-7">
-                                  <input type="text" ng-model="ctrl.stadium.address" id="address" class="form-control input-sm" placeholder="Enter your Address. [This field is validation free]"/>
+                                  <input type="text" ng-model="ctrl.stadium.stadiumAddress" id="address" class="form-control input-sm" placeholder="Enter your Address. [This field is validation free]"/>
                               </div>
                           </div>
                       </div>
