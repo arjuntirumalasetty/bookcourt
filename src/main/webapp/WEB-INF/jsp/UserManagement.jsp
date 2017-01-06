@@ -47,15 +47,47 @@
                             </div>
                         </div>
 
-
                       <div class="row">
+                           <div class="form-group col-md-12">
+                               <label class="col-md-2 control-lable" for="streetName">Street Name</label>
+                               <div class="col-md-7">
+                                   <input type="text" ng-model="ctrl.stadiumAddress.streetName" id="streetName" class="username form-control input-sm" placeholder="Enter stadium Street name" required/>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row">
                           <div class="form-group col-md-12">
-                              <label class="col-md-2 control-lable" for="address">Address</label>
+                              <label class="col-md-2 control-lable" for="cityName">City Name</label>
                               <div class="col-md-7">
-                                  <input type="text" ng-model="ctrl.stadium.stadiumAddress" id="address" class="form-control input-sm" placeholder="Enter your Address. [This field is validation free]"/>
+                                  <input type="text" ng-model="ctrl.stadiumAddress.cityName" id="cityName" class="username form-control input-sm" placeholder="Enter City Name" required/>
                               </div>
                           </div>
                       </div>
+
+                      <div class="row">
+                            <div class="form-group col-md-12">
+                                <label class="col-md-2 control-lable" for="landMark">Land Mark</label>
+                                <div class="col-md-7">
+                                    <input type="text" ng-model="ctrl.stadiumAddress.landMark" id="landMark" class="username form-control input-sm" placeholder="Enter Land mark nearby" required/>
+                                </div>
+                            </div>
+                      </div>
+                         <div class="row">
+                               <div class="form-group col-md-12">
+                                   <label class="col-md-2 control-lable" for="state">State</label>
+                                   <div class="col-md-7">
+                                       <input type="text" ng-model="ctrl.stadiumAddress.state" id="state" class="username form-control input-sm" placeholder="Enter State" required/>
+                                   </div>
+                               </div>
+                          </div>
+                       <div class="row">
+                          <div class="form-group col-md-12">
+                              <label class="col-md-2 control-lable" for="country">State</label>
+                              <div class="col-md-7">
+                                  <input type="text" ng-model="ctrl.stadiumAddress.country" id="state" class="username form-control input-sm" placeholder="Enter country" required/>
+                              </div>
+                          </div>
+                     </div>
 
                       <div class="row">
                           <div class="form-actions floatRight">
@@ -66,34 +98,7 @@
                   </form>
               </div>
           </div>
-          <div class="panel panel-default">
-                <!-- Default panel contents -->
-              <div class="panel-heading"><span class="lead">List of stadiums </span></div>
-              <div class="tablecontainer">
-                  <table class="table table-hover">
-                      <thead>
-                          <tr>
-                              <th>ID.</th>
-                              <th>Name</th>
-                              <th>Address</th>
-                              <th>Email</th>
-                              <th width="20%"></th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr ng-repeat="u in ctrl.stadiums">
-                              <td><span ng-bind="u.id"></span></td>
-                              <td><span ng-bind="u.stadiumname"></span></td>
-                              <td><span ng-bind="u.address"></span></td>
-                              <td><span ng-bind="u.email"></span></td>
-                              <td>
-                              <button type="button" ng-click="ctrl.edit(u.id)" class="btn btn-success custom-width">Edit</button>  <button type="button" ng-click="ctrl.remove(u.id)" class="btn btn-danger custom-width">Remove</button>
-                              </td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
-          </div>
+
       </div>
 
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>

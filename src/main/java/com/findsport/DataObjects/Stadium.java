@@ -8,8 +8,8 @@ public class Stadium {
     private int stadiumID;
     private float stadiumLongitude;
     private float stadiumLatitude;
-    private String stadiumPhoneNo;
     private String stadiumName;
+    private String stadiumPhoneNo;
 
     public void setStadiumID(int stadiumID) {
         this.stadiumID = stadiumID;

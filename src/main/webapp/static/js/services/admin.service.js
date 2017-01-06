@@ -8,9 +8,10 @@ angular.module('myApp',[]).factory('adminService',['$http','$q',function($http,$
          };
       return factory;
 
-     function createStadium(stadium) {
+     function createStadium(stadium,stadiumAddress) {
              var deferred = $q.defer();
-             $http.post(REST_SERVICE_URI+"/stadium", stadium)
+             var stadiumDetails = {stadium : stadium,stadiumAddress , stadiumAddress};
+             $http.post(REST_SERVICE_URI+"/stadium", stadiumDetails)
                  .then(
                  function (response) {
                      deferred.resolve(response.data);

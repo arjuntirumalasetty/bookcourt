@@ -4,34 +4,34 @@ package com.findsport.DataObjects;
  * Created by Arjun on 12/30/2016.
  */
 public class StadiumAddress {
-    private String street_name;
-    private String city_name;
-    private String land_mark;
+    private String streetName;
+    private String cityName;
+    private String landMark;
     private String state;
     private String country;
 
-    public String getStreet_name() {
-        return street_name;
+    public String getStreetName() {
+        return streetName;
     }
 
-    public void setStreet_name(String street_name) {
-        this.street_name = street_name;
+    public void setStreetName(String street_name) {
+        this.streetName= street_name;
     }
 
-    public String getCity_name() {
-        return city_name;
+    public String getCityname() {
+        return cityName;
     }
 
-    public void setCity_name(String city_name) {
-        this.city_name = city_name;
+    public void setCityName(String city_name) {
+        this.cityName = city_name;
     }
 
-    public String getLand_mark() {
-        return land_mark;
+    public String getLandMark() {
+        return landMark;
     }
 
     public void setLand_mark(String land_mark) {
-        this.land_mark = land_mark;
+        this.landMark = land_mark;
     }
 
     public String getState() {

@@ -6,10 +6,12 @@ import com.findsport.DataObjects.Stadium;
 public class StadiumHandler {
 
     public static String handleStadiumInsertRequest(Stadium stadiumDataObject) {
-        boolean statusFlag = StadiumDAO.insertData(stadiumDataObject);
+       /* boolean statusFlag = StadiumDAO.insertData(stadiumDataObject, addressId);
         if (statusFlag)
             return "Success";
+            */
         return "Failed";
+
 
     }
 

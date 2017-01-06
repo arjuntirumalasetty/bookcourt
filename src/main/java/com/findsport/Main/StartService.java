@@ -5,6 +5,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import java.util.HashMap;
+
 /**
  * Created by Arjun on 12/27/2016.
  */
@@ -17,8 +19,11 @@ public class StartService {
     
     public static void main(String[] args){
         try {
+            HashMap<String,String> test = new HashMap<String,String>();
+            test.put()
             ApplicationContext context =
                     new ClassPathXmlApplicationContext("Springbean.xml");
+            System.out.println("Spring bean initailized");
             CreateDBConnection connection = (CreateDBConnection) context.getBean("createDBConnection");
             JdbcTemplate template = connection.getConnection();
             String insert_stadium_details = "INSERT INTO stadium_details (stadium_name,stadium_longitude, stadium_latitide,stadium_phoneno, stadium_adress) VALUES (?,?,?,?,?)";
