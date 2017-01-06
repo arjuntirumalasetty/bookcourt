@@ -19,8 +19,6 @@ public class StartService {
     
     public static void main(String[] args){
         try {
-            HashMap<String,String> test = new HashMap<String,String>();
-            test.put()
             ApplicationContext context =
                     new ClassPathXmlApplicationContext("Springbean.xml");
             System.out.println("Spring bean initailized");
