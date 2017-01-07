@@ -32,7 +32,7 @@ public class AdminRegistrationControllerTest {
     @Test
     public void test(){
         try {
-            mockMVC.perform(post("/firstTest").
+            mockMVC.perform(post("/stadium").
                     content("{\"stadiumID\":0,\"stadiumLongitude\":\"1234.1234\",\"stadiumLatitude\":\"1234.123\",\"stadiumPhoneNo\":\"1234567890\",\"stadiumAddress\":\"testStadiumaddress\",\"stadiumName\":\"testStadiumName\"}").
                     contentType(MediaType.APPLICATION_JSON)).
                     andDo(print());

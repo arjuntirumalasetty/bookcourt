@@ -42,7 +42,7 @@
                             <div class="form-group col-md-12">
                                 <label class="col-md-2 control-lable" for="phno">Phone number</label>
                                 <div class="col-md-7">
-                                    <input type="text" ng-model="ctrl.stadium.stadiumPhoneNo" id="phno" class="username form-control input-sm" placeholder="Enter stadium phone number" required ng-minlength="10"/>
+                                    <input type="text" ng-model="ctrl.stadium.stadiumPhoneNo" id="phno" class="username form-control input-sm" placeholder="Enter stadium phone number" required ng-minlength="10" />
                                 </div>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                            <div class="form-group col-md-12">
                                <label class="col-md-2 control-lable" for="streetName">Street Name</label>
                                <div class="col-md-7">
-                                   <input type="text" ng-model="ctrl.stadiumAddress.streetName" id="streetName" class="username form-control input-sm" placeholder="Enter stadium Street name" required/>
+                                   <input type="text" ng-model="ctrl.stadium.streetName" id="streetName" class="username form-control input-sm" placeholder="Enter stadium Street name" required/>
                                </div>
                            </div>
                        </div>
@@ -59,7 +59,7 @@
                           <div class="form-group col-md-12">
                               <label class="col-md-2 control-lable" for="cityName">City Name</label>
                               <div class="col-md-7">
-                                  <input type="text" ng-model="ctrl.stadiumAddress.cityName" id="cityName" class="username form-control input-sm" placeholder="Enter City Name" required/>
+                                  <input type="text" ng-model="ctrl.stadium.cityName" id="cityName" class="username form-control input-sm" placeholder="Enter City Name" required/>
                               </div>
                           </div>
                       </div>
@@ -68,7 +68,7 @@
                             <div class="form-group col-md-12">
                                 <label class="col-md-2 control-lable" for="landMark">Land Mark</label>
                                 <div class="col-md-7">
-                                    <input type="text" ng-model="ctrl.stadiumAddress.landMark" id="landMark" class="username form-control input-sm" placeholder="Enter Land mark nearby" required/>
+                                    <input type="text" ng-model="ctrl.stadium.landMark" id="landMark" class="username form-control input-sm" placeholder="Enter Land mark nearby" required/>
                                 </div>
                             </div>
                       </div>
@@ -76,7 +76,7 @@
                                <div class="form-group col-md-12">
                                    <label class="col-md-2 control-lable" for="state">State</label>
                                    <div class="col-md-7">
-                                       <input type="text" ng-model="ctrl.stadiumAddress.state" id="state" class="username form-control input-sm" placeholder="Enter State" required/>
+                                       <input type="text" ng-model="ctrl.stadium.state" id="state" class="username form-control input-sm" placeholder="Enter State" required/>
                                    </div>
                                </div>
                           </div>
@@ -84,7 +84,7 @@
                           <div class="form-group col-md-12">
                               <label class="col-md-2 control-lable" for="country">State</label>
                               <div class="col-md-7">
-                                  <input type="text" ng-model="ctrl.stadiumAddress.country" id="state" class="username form-control input-sm" placeholder="Enter country" required/>
+                                  <input type="text" ng-model="ctrl.stadium.country" id="state" class="username form-control input-sm" placeholder="Enter country" required/>
                               </div>
                           </div>
                      </div>

@@ -17,17 +17,12 @@ import org.springframework.web.bind.annotation.*;
 public class AdminRegisterController {
 
     @RequestMapping(value= "/stadium", method = RequestMethod.POST)
-    public ResponseEntity<Void> createAdmin(@RequestBody AdminData adminData){
+    public ResponseEntity<Void> createAdmin(@RequestBody Stadium stadium){
         System.out.println("Inside /Stadium");
         boolean reslut = false;
-        Stadium stadium = adminData.getStadium();
-        StadiumAddress stadiumAddress = adminData.getStadiumAddress();
         System.out.println("stadium.getStadiumAddress() stadium.getStadiumName() "+stadium.getStadiumName()+
-                " stadium.getStadiumPhoneNo() "+stadium.getStadiumPhoneNo()+" stadium.getStadiumLatitude() "+stadium.getStadiumLatitude());
-        int addressId = StadiumDAO.insertStadiumAddress(stadiumAddress);
-        if(addressId>-1) {
-             reslut = StadiumDAO.insertData(stadium,addressId);
-        }
+                " stadium.getStadiumPhoneNo() "+stadium.getStadiumPhoneNo()+" stadium.getStadiumLatitude() "+stadium.getStadiumLatitude()+" stadium streetname "+ stadium.getStreetName());
+             reslut = StadiumDAO.insertData(stadium);
         if(reslut){
             return new ResponseEntity<Void>(HttpStatus.OK);
         }
