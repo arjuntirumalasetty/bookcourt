@@ -12,7 +12,6 @@
 
     <bean id="createDBConnection" class="com.findsport.DataBaseConnections.CreateDBConnection">
 
-        <property name="dataSource" ref="dataSource" />
     </bean>
 
     <bean id="dataSource"

@@ -1,5 +1,6 @@
 package com.findsport.DataBaseConnections;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -12,7 +13,7 @@ import java.sql.Connection;
 public class CreateDBConnection {
 
 	// Database settings
-
+	@Autowired
 	private DriverManagerDataSource dataSource;
 	private JdbcTemplate jdbcTemplate;
 
