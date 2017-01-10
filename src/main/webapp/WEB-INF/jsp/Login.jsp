@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <title>Login Form</title>
 <link rel="stylesheet" href="static/ism/css/my-slider.css"/>
-<script src="static/ism/js/ism-2.2.min.js"></script>
-
-
 <style>
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
       @import url(http://fonts.googleapis.com/css?family=Open+Sans);
@@ -70,33 +67,46 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
     </style>
 </head>
 
-<body>
-<div class="ism-slider" data-play_type="loop" id="my-slider">
-  <ol>
-    <li>
-      <img src="static/ism/image/slides/_u/1483857447384_726597.jpg">
-      <div class="ism-caption ism-caption-0">My slide caption text</div>
-    </li>
-    <li>
-      <img src="static/ism/image/slides/beautiful-701678_1280.jpg">
-      <div class="ism-caption ism-caption-0">My slide caption text</div>
-    </li>
-    <li>
-      <img src="static/ism/image/slides/summer-192179_1280.jpg">
-      <div class="ism-caption ism-caption-0">My slide caption text</div>
-    </li>
-  </ol>
-</div>
+<body ng-app="myApp">
+        <div class="ism-slider" data-play_type="loop" id="my-slider">
+          <ol>
+            <li>
+              <img src="static/ism/image/slides/_u/1483857447384_726597.jpg">
+              <div class="ism-caption ism-caption-0">My slide caption text</div>
+            </li>
+            <li>
+              <img src="static/ism/image/slides/beautiful-701678_1280.jpg">
+              <div class="ism-caption ism-caption-0">My slide caption text</div>
+            </li>
+            <li>
+              <img src="static/ism/image/slides/summer-192179_1280.jpg">
+              <div class="ism-caption ism-caption-0">My slide caption text</div>
+            </li>
+          </ol>
+        </div>
 
-  <div class="login">
-    <h1>Login</h1>
-    <form method="post">
-        <input type="text" name="u" placeholder="Username" required="required" />
-        <input type="password" name="p" placeholder="Password" required="required" />&nbsp;&nbsp;
-        <button type="submit" class="btn btn-primary">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
-        <button type="submit" class="btn btn-primary">Register</button>
-        <a href = "www.google.com">Forget Password</a>
-    </form>
-</div>
+          <div class="login" ng-controller = "loginController as loginCtrl">
+            <h1>Login</h1>
+            <form method="post">
+                <input type="text" name="u" placeholder="Username" required="required" />
+                <input type="password" name="p" placeholder="Password" required="required" />&nbsp;&nbsp;
+                <button type="submit" class="btn btn-primary">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" ng-click = "redirectToRegistration()" class="btn btn-primary">Register</button>
+                <a href="/register" class="btn btn-primary">Register</a>
+                <a href = "www.google.com">Forget Password</a>
+            </form>
+        </div>
+
+        <div ng-view> </div>
+
+        <script src="static/ism/js/ism-2.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+               <script src="static/js/app.js"></script>
+               <script src="static/js/services/admin.service.js"></script>
+               <script src="static/js/controllers/admin.controller.js"></script>
+              <script src="static/js/controllers/login.controller.js"></script>
+
 </body>
 </html>

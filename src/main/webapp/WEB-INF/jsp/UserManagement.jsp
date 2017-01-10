@@ -17,7 +17,7 @@
     </style>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   </head>
-  <body ng-app="myApp" class="ng-cloak">
+  <body class="ng-cloak">
       <div class="generic-container" ng-controller="adminController as ctrl">
           <div class="panel panel-default">
               <div class="panel-heading"><span class="lead">stadium Registration Form </span></div>
@@ -100,10 +100,5 @@
           </div>
 
       </div>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-      <script src="<c:url value='/static/js/app.js' />"></script>
-      <script src="<c:url value='/static/js/services/admin.service.js' />"></script>
-      <script src="<c:url value='/static/js/controllers/admin.controller.js' />"></script>
-  </body>
+</body>
 </html>
